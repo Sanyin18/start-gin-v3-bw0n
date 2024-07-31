@@ -17,6 +17,10 @@ type LoginResponse struct {
 	Token string `json:"token"`
 }
 
+var AdminUser = map[string]string{
+	Admin: Password,
+}
+
 func Login(c *gin.Context) {
 	// 解析请求body中的JSON数据
 	var loginRequest LoginRequest

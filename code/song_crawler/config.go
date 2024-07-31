@@ -30,10 +30,6 @@ var (
 
 	JWTKey = []byte(JWTKeyString)
 
-	AdminUser = map[string]string{
-		Admin: Password,
-	}
-
 	MysqlDB       *sql.DB
 	RedisDB       *redis.Client
 	Bucket        *oss.Bucket
