@@ -63,6 +63,7 @@ func Getenv() {
 
 	JWTKey = []byte(JWTKeyString)
 
+	AdminUser = make(map[string]string)
 	AdminUser[Admin] = Password
 
 }
